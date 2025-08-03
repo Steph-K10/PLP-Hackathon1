@@ -1,8 +1,8 @@
 /* setting colors of differen attributes */
 :root {
-    --text color: #1a1c20;
-    --link color: #00563B;
-    background color: #eeeff1
+    --text-color: #1a1c20;
+    --link-color: #00563B;
+    --background-color: #eeeff1;
 }
 
 /* resetting default sylings*/
@@ -21,7 +21,7 @@ html{
 /* setting fonts to body tag */
 
 body{
-    font family: 'Nunito', montserrat;
+    font-family: 'Nunito', sans-serif;
     background-color: var(background-color);
 }
 
@@ -30,3 +30,46 @@ a{
     /* to remove underline in links */
     text-decoration:none
 }
+
+/* Navigation Bar */
+    nav {
+        display: flex;
+        /* Adding space between elements */
+        justify-content: space-between;
+        align-items: center;
+        /* padding edges */
+        padding: 0 50px;
+        /* adding fixed height to top */
+        height: 80px;
+        
+    }
+
+    /* Styling left nav bar icon */
+    nav .left a {
+        color: var(--text-color);
+        font-size: 22px;
+        font-weight: 600;
+
+    }
+
+    /* Styling right nav bar icons */
+    nav .right a {
+        color: var(--text-color);
+        margin: 0 10px;
+
+
+    }
+
+    /* Styling last element or right icons */
+    nav .right a:last-child {
+        color: var(--background-color);
+        background-color: var(--text-color);
+        padding: 5px 15px;
+        /* rounding borders */
+        border-radius: 5px;
+    }
+
+    /* spacing adjustment*/
+    nav .right a span {
+        margin-left: 5px;
+    }
