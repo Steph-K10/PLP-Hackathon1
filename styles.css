@@ -1,0 +1,32 @@
+/* setting colors of differen attributes */
+:root {
+    --text color: #1a1c20;
+    --link color: #00563B;
+    background color: #eeeff1
+}
+
+/* resetting default sylings*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+/* smoothing out scroll */
+html{
+    scroll-behavior: smooth;
+}
+
+/* setting fonts to body tag */
+
+body{
+    font family: 'Nunito', montserrat;
+    background-color: var(background-color);
+}
+
+a{
+    color: var(--link-color);
+    /* to remove underline in links */
+    text-decoration:none
+}
