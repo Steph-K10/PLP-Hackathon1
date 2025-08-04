@@ -12,6 +12,44 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <title>Steph's Portfolio | PLP</title>
         <style>
+            /* Global Styles */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Arial', sans-serif;
+            }
+            
+            body {
+                line-height: 1.6;
+                color: #333;
+                background-color: #f9f9f9;
+            }
+            
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+            
+            h1, h2, h3 {
+                margin-bottom: 20px;
+                color: #2c3e50;
+            }
+            
+            p {
+                margin-bottom: 15px;
+            }
+            
+            a {
+                text-decoration: none;
+                color: #275729;
+            }
+            
             /* Header Customization*/
             header {
                 background-color: #00563b;
@@ -51,6 +89,70 @@
             .nav-links a:hover {
                 color: #0c1a0b;
             }
+            
+            /* Hero Section */
+            #hero {
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+                background-size: cover;
+                background-position: center;
+                color: white;
+                text-align: center;
+                margin-top: -80px;
+            }
+            
+            .hero-content h1 {
+                font-size: 48px;
+                margin-bottom: 20px;
+                color: white;
+            }
+            
+            .hero-content p {
+                font-size: 20px;
+                max-width: 800px;
+                margin: 0 auto 30px;
+            }
+            
+            .btn {
+                display: inline-block;
+                background: #00563b;
+                color: white;
+                padding: 12px 30px;
+                border-radius: 5px;
+                transition: background 0.3s;
+            }
+            
+            .btn:hover {
+                background: #2980b9;
+            }
+            
+            /* About-me Section */
+            #about {
+                background-color: white;
+            }
+            
+            .about-content {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+            }
+            
+            .about-text {
+                flex: 1;
+            }
+            
+            .about-image {
+                flex: 1;
+                text-align: center;
+            }
+            
+            .about-image img {
+                max-width: 100%;
+                border-radius: 10px;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
         </style>
     </head>
     <body>
@@ -72,11 +174,35 @@
             </div>
         </header>
         
-        <!-- Section 1: Intro-->
-        <section id="intro">
-            
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Hi, I'm Stephanie Khaguli</h1>
+                    <p>A passionate up-and-coming developer specializing in web development and full-stack software engineering as part of Power Learn Project's 8th Software Development cohort. I am on the journey of learning to create efficient solutions and beautiful user experiences.</p>
+                    <a href="#projects" class="btn">View My Work</a>
+                </div>
+            </div>
         </section>
-        
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm an up-and-coming software developer with a background in Mechanical Engineering. My background shaped my passion for engineering applied in the context of developing sustainable, impact-driven, and human-centered solutions.</p>
+                        <p>I am excited to pursue the same goals, this time in the context of the dynamic field of Software Development</p>
+                        <p>I am energized by free flowing exchanges of ideas, learning and drawing from different skill sets to overcome obstacles, and the outreach and involvement of the community/shareholders throughout the design and implementation process.</p>
+                        <p>When I'm not coding, you can find me trying to learn one too many spoken languages at the same time, cooking, or dancing to my favorite music. </p>
+                    </div>
+                    <div class="about-image">
+                        <img src="Profile-Photo.jpg" alt="Profile Picture">
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Section 2: Skills -->
         <section id="skills">
             
