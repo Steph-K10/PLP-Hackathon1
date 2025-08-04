@@ -5,6 +5,7 @@ A clean, responsive personal portfolio website built with HTML and CSS to showca
 
 ### Site Link: https://stephdevsportfolio.netlify.app/
 
+*Kindly note that skha10 and Steph-K10 are the same person, not separate collaborators. realized at the end that I logged into my old github account on Git*
 
 ## Features:
 
