@@ -166,15 +166,19 @@
                 }
                 
                 .skill-card {
-                    background: white;
-                    padding: 20px;
-                    border-radius: 5px;
-                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-                    width: 200px;
-                    text-align: center;
-                    transition: transform 0.3s;
+                /* to fix overlay leaking onto hero section */
+                position: relative; /* Contains the overlay */
+                overflow: hidden;   /* Prevents overlay from leaking outside */
+                /* other styling */
+                background: white;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                width: 200px;
+                text-align: center;
+                transition: transform 0.3s;
                 }
-                
+
                 .skill-card:hover {
                     /* to add a nice animation to the skill card */
                     transform: translateY(-10px);
@@ -195,7 +199,7 @@
                     color: white;
                     font-size: 1.5rem;
                     font-weight: bold;
-                    backdrop-filter: blur(2px); /* blur effect */
+                    backdrop-filter: blur(1px); /* blur effect */
                 }
 
                 .skill-card i {
@@ -283,18 +287,14 @@
                         <h3>Python</h3>
                         <p>Django, Flask, data analysis, automation</p>
                         <!-- Overlay HTML -->
-                        <div class="coming-soon-overlay">
-                            <span>Coming Soon</span>
-                        </div>
+                        <div class="coming-soon-overlay">Coming Soon</div>
                     </div>
                     <div class="skill-card">
                         <i class="fas fa-database"></i>
                         <h3>SQL</h3>
                         <p>Database design, optimization, PostgreSQL/MySQL</p>
                         <!-- Overlay HTML -->
-                        <div class="coming-soon-overlay">
-                            <span>Coming Soon</span>
-                        </div>
+                        <div class="coming-soon-overlay">Coming Soon</div>
                     </div>
                     <div class="skill-card">
                         <i class="fab fa-git-alt"></i>
