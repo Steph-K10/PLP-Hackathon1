@@ -402,9 +402,42 @@
                     margin: 0 10px;
                     font-size: 20px;
                 }
-            
-            
+        /* Responsive Design */
+        @media (max-width: 768px) {
+                .about-content {
+                    flex-direction: column;
+                }
+                
+                .timeline::after {
+                    left: 31px;
+                }
+                
+                .timeline-item {
+                    width: 100%;
+                    padding-left: 70px;
+                    padding-right: 25px;
+                }
+                
+                .timeline-item::after {
+                    left: 21px;
+                }
+                
+                .left::after, .right::after {
+                    left: 21px;
+                }
+                
+                .right {
+                    left: 0;
+                }
+                
+                .contact-container {
+                    flex-direction: column;
+                }
+            }
         </style>
+        
+        <!-- Load font awesome library for icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body>
         
