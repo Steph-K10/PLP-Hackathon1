@@ -317,6 +317,27 @@
                 .project-info {
                     padding: 20px;
                 }
+            /* Interests Section */
+                #interests {
+                    background-color: white;
+                }
+                
+                .interests-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    justify-content: center;
+                }
+                
+                .interest-card {
+                    background: #f1f1f1;
+                    padding: 20px;
+                    border-radius: 5px;
+                    width: 200px;
+                    text-align: center;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                }
+            
             
         </style>
     </head>
@@ -496,6 +517,41 @@
                 </div>
             </div>
         </section>
+    <!-- Interests Section -->
+        <section id="interests">
+            <div class="container">
+                <h2>My Interests</h2>
+                <div class="interests-container">
+                    <!-- Creating cards using icons from Font Awesome -->
+                    <div class="interest-card">
+                        <i class="fa-solid fa-cubes"></i>
+                        <h3>Full Stack Web Development</h3>
+                        <p>Development of both client side and server side portions of web applications</p>
+                    </div>
+                    <div class="interest-card">
+                        <i class="fas fa-lock"></i>
+                        <h3>Cybersecurity</h3>
+                        <p>Protecting systems and data from digital attacks</p>
+                    </div>
+                    <div class="interest-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Mobile Development</h3>
+                        <p>Creating apps for iOS and Android platforms</p>
+                    </div>
+                    <div class="interest-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Data Science</h3>
+                        <p>Extracting insights from complex datasets</p>
+                    </div>
+                    <div class="interest-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Community and Entrepreneurship</h3>
+                        <p>Contributing to community-driven, and community-centered projects</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
 
         <!-- Section 5: Contact -->
         <section id="contact">
