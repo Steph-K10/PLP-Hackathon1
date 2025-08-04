@@ -337,6 +337,71 @@
                     text-align: center;
                     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
                 }
+            /* Contact Section */
+                #contact {
+                    background-color: #2c3e50;
+                    color: white;
+                }
+                
+                #contact h2 {
+                    color: white;
+                }
+                
+                .contact-container {
+                    display: flex;
+                    gap: 40px;
+                }
+                
+                .contact-info {
+                    flex: 1;
+                }
+                
+                .contact-info p {
+                    margin-bottom: 20px;
+                }
+                
+                .contact-form {
+                    flex: 1;
+                }
+                
+                .form-group {
+                    margin-bottom: 20px;
+                }
+                
+                .form-group label {
+                    display: block;
+                    margin-bottom: 5px;
+                }
+                
+                .form-group input,
+                .form-group textarea {
+                    width: 100%;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 5px;
+                }
+                
+                .form-group textarea {
+                    height: 150px;
+                }
+            
+            /* Footer */
+                footer {
+                    background-color: #1a252f;
+                    color: white;
+                    text-align: center;
+                    padding: 20px 0;
+                }
+                
+                .social-links {
+                    margin-bottom: 20px;
+                }
+                
+                .social-links a {
+                    color: white;
+                    margin: 0 10px;
+                    font-size: 20px;
+                }
             
             
         </style>
@@ -553,12 +618,53 @@
         </section>
         
 
-        <!-- Section 5: Contact -->
+    <!-- Contact Section -->
         <section id="contact">
-        
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> steph.kha.10@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                        <p class="nav-links"><a href="#social-links">Socials</a></li></p>
+                        <p>Feel free to reach out for a chat. Always looking for new inspirations and exciting challenges.</p>
+                    </div>
+                    <!-- design contact form using netlify forms to handle submissions -->
+                    <div class="contact-form">
+                        <form name="contact" method="POST" netlify>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
-    
+
+    <!-- Footer -->
         <footer>
-            <p>© 2025 Steph Khaguli 
+            <div class="container">
+                <div class="social-links">
+                    <section id="social-links"></section> <!--to navigate to socials icons from get in touch section-->
+                    <a href="https://github.com/Steph-K10"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/skha10/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p>&copy; 2025 Steph Khaguli.</p>
+            </div>
+        </footer>
     </body>
 </html>
